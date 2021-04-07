@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+    background-color: black;
+}
+.container {
+    display: flex;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.slider-wrapper {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
+
+.prev, .next {
+    position: absolute;
+    color: gold;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 100px;
+    cursor: pointer;
+}
+.next {
+    left: auto;
+    right: 0;
+}

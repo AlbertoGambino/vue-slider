@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-slider</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+  <body>
+      <div class="container">
+
+          <div id="app" class="slider-wrapper">
+              <div class="prev" @click="prev">
+                  <i class="fas fa-angle-left"></i>
+              </div>
+              <div v-for ="i in [currentIndex]" class="images">
+
+                <img :src="currentImg" alt="">
+
+              </div>
+              <div class="next" @click = "next">
+                  <i class="fas fa-angle-right"></i>
+              </div>
+
+          </div>
+      </div>
+  </body>
+</html>
